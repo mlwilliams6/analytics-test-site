@@ -12,7 +12,7 @@ function dlPush(evt) {
 // ---- Public tracking APIs ----
 
 /** Pageview */
-function trackPageview({ pageName, siteSection }) {
+function trackPageView({ pageName, siteSection }) {
   dlPush({
     event: "page_view",
     page: { pageName, siteSection, url: location.href }
