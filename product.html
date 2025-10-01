@@ -1,45 +1,73 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Product Detail</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- Vendor snippets go here -->
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-TLCPHRZZ");
+    </script>
+    <!-- End Google Tag Manager -->
     <!--#include file="_vendor.html" -->
   </head>
   <body>
-    
-<header>
-  <nav>
-    <a href="./index.html">Home</a>
-    <a href="./products.html">Products</a>
-    <a href="./product.html">Product (detail)</a>
-    <a href="./cart.html">Cart</a>
-  </nav>
-</header>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TLCPHRZZ"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header>
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="./products.html">Products</a>
+        <a href="./product.html">Product (detail)</a>
+        <a href="./cart.html">Cart</a>
+      </nav>
+    </header>
 
     <main>
-      
-    <h1>Product Detail</h1>
-    <div class="card">
-      <h3>Widget Pro Max</h3>
-      <p>SKU: SKU2001</p>
-      <p>$29.99</p>
-      <button class="btn" id="addBtn">Add to cart</button>
-    </div>
-    
+      <h1>Product Detail</h1>
+      <div class="card">
+        <h3>Widget Pro Max</h3>
+        <p>SKU: SKU2001</p>
+        <p>$29.99</p>
+        <button class="btn" id="addBtn">Add to cart</button>
+      </div>
     </main>
-    
-<footer>
-  <p>Demo site for analytics testing. Add your tag manager (GTM / Adobe Launch) snippet into <code>_vendor.html</code>.</p>
-</footer>
-<div class="debug" id="debugPanel" aria-live="polite">
-  <strong>Debug Panel</strong>
-  <div class="notice">Recent <code>dataLayer</code> events will appear here. Open DevTools → Network to inspect requests from your tag manager.</div>
-  <pre id="debugLog"></pre>
-</div>
 
-    <script type='module' src='./product.js'></script>
+    <footer>
+      <p>
+        Demo site for analytics testing. Add your tag manager (GTM / Adobe
+        Launch) snippet into <code>_vendor.html</code>.
+      </p>
+    </footer>
+    <div class="debug" id="debugPanel" aria-live="polite">
+      <strong>Debug Panel</strong>
+      <div class="notice">
+        Recent <code>dataLayer</code> events will appear here. Open DevTools →
+        Network to inspect requests from your tag manager.
+      </div>
+      <pre id="debugLog"></pre>
+    </div>
+
+    <script type="module" src="./product.js"></script>
   </body>
 </html>
